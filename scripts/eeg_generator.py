@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+##
+##   [2012] - [2016] Mensia Technologies SA
+##   Copyright, All Rights Reserved.
+##
+
 from __future__ import print_function, division
 import numpy as np
 
