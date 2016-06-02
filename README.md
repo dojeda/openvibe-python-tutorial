@@ -1,7 +1,9 @@
 # openvibe-python-tutorial
 OpenViBE Python scripting box examples
 
-# Notes
+This tutorial should work with OpenViBE version 1.2.0. For a previous version, see note below.
+
+## Notes for version <1.2.0
 
 If you use the scenarios and Python code in this repository, you may
 need to apply a small patch and recompile OpenViBE. More precisely,
@@ -10,6 +12,8 @@ there is likely a call to `strtol` in order to convert from string to
 long. The error handling code after this call forgets that the `errno`
 variable must be set prior to calling `strtol`. The solution is
 simple, set `errno=0` before calling `strtol`.
+
+On version 1.2.0, this bug has been fixed.
 
 This bug happens when some other code sets the `errno` prior to
 OpenViBE's initialization. Which certainly happens in the code here
